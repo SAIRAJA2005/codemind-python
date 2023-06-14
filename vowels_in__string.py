@@ -2,7 +2,7 @@ n = input()
 g = list(n)
 r = []
 c = 0
-k = ["a","e","i","o","u","A","E","I","O","U"]
+k = "aeiouAEIOU"
 for i in range(len(g)):
     if g[i] in k:
         if g[i] not in r:
@@ -11,7 +11,4 @@ for i in range(len(g)):
 if c==0:
     print("-1")
 else:
-    for i in r:
-        print(i,end=" ")
-    
-    
+    print(*r)
