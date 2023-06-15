@@ -1,12 +1,9 @@
 n = int(input())
 for i in range(n):
     k = int(input())
-    r = list(map(int,input().split()))
-    r1 = r
-    if r1==sorted(r):
+    l = list(map(int,input().split()))
+    l1 = sorted(l)
+    if l1 == l:
         print("0")
     else:
-        r.sort()
-        t = min(r)
-        t1 = max(r)
-        print(abs(t-t1))
+        print(max(l)-min(l))
