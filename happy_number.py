@@ -1,12 +1,12 @@
 n=int(input())
-while(n//10!=0):
-    x=0; 
-    while(n!=0):
-        rem=n%10 
-        x=x+rem*rem 
-        n=n//10 
-    n=x
-if(x==1 or x==7):
-    print(True) 
+while n>=9:
+    s=0
+    while n!=0:
+        r=n%10
+        s=s+r*r
+        n=n//10
+    n=s
+if n==1 or n==7:
+    print(True)
 else:
     print(False)
