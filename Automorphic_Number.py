@@ -1,9 +1,7 @@
-n = int(input()) 
-r = n 
-t = n*n 
-e = len(str(r)) 
-a = 10**e
-if t%a==r:
+n = int(input())
+n1 = len(str(n))
+k = n*n
+if (n == k%10**n1):
     print("Automorphic Number")
 else:
     print("Not an Automorphic Number")
